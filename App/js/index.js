@@ -21,59 +21,6 @@ xui.Class('App', 'xui.Module',{
             var host=this, children=[], append=function(child){children.push(child.get(0));};
             
             append(
-                xui.create("xui.UI.Div")
-                .setHost(host,"xui_ui_div48")
-                .setLeft("8.380952380952381em")
-                .setTop("2.2857142857142856em")
-                .setWidth("38.17142857142857em")
-                .setHeight("16.076190476190476em")
-            );
-            
-            host.xui_ui_div48.append(
-                xui.create("xui.UI.Input")
-                .setHost(host,"xui_ui_input31")
-                .setLeft("0.7619047619047619em")
-                .setTop("2.2857142857142856em")
-                .setWidth("32.457142857142856em")
-                .setLabelSize("8em")
-                .setLabelCaption("Username")
-            );
-            
-            host.xui_ui_div48.append(
-                xui.create("xui.UI.Input")
-                .setHost(host,"xui_ui_input32")
-                .setLeft("0.7619047619047619em")
-                .setTop("4.571428571428571em")
-                .setWidth("32.457142857142856em")
-                .setLabelSize("8em")
-                .setLabelCaption("Password")
-            );
-            
-            host.xui_ui_div48.append(
-                xui.create("xui.UI.Button")
-                .setHost(host,"xui_ui_button14")
-                .setLeft("19.80952380952381em")
-                .setTop("6.857142857142857em")
-                .setWidth("12.876190476190477em")
-                .setCaption("Login")
-                .onClick([
-                    {
-                        "desc" : "Action 1",
-                        "type" : "other",
-                        "target" : "msg",
-                        "args" : [
-                            "Silahkan Login terlebih dahulu",
-                            "Pesan",
-                            200,
-                            5000
-                        ],
-                        "method" : "message",
-                        "event" : 1
-                    }
-                ])
-            );
-            
-            append(
                 xui.create("xui.UI.ToolBar")
                 .setHost(host,"xui_ui_toolbar11")
                 .setItems([
@@ -82,7 +29,7 @@ xui.Class('App', 'xui.Module',{
                         "sub" : [
                             {
                                 "id" : "a1",
-                                "caption" : "button"
+                                "caption" : "Ktp"
                             },
                             {
                                 "id" : "a2",
@@ -90,7 +37,7 @@ xui.Class('App', 'xui.Module',{
                             },
                             {
                                 "id" : "a3",
-                                "caption" : "drop button",
+                                "caption" : "Formulir",
                                 "type" : "dropButton"
                             },
                             {
