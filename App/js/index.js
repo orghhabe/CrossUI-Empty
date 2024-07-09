@@ -19,7 +19,51 @@ xui.Class('App', 'xui.Module',{
         iniComponents : function(){
             // [[Code created by CrossUI RAD Studio
             var host=this, children=[], append=function(child){children.push(child.get(0));};
-
+            
+            append(
+                xui.create("xui.UI.Input")
+                .setHost(host,"xui_ui_input5")
+                .setLeft("9.904761904761905em")
+                .setTop("4.571428571428571em")
+                .setWidth("32.457142857142856em")
+                .setLabelSize("8em")
+                .setLabelCaption("Username")
+            );
+            
+            append(
+                xui.create("xui.UI.Input")
+                .setHost(host,"xui_ui_input6")
+                .setLeft("9.904761904761905em")
+                .setTop("6.857142857142857em")
+                .setWidth("32.457142857142856em")
+                .setLabelSize("8em")
+                .setLabelCaption("Password")
+            );
+            
+            append(
+                xui.create("xui.UI.Button")
+                .setHost(host,"xui_ui_button6")
+                .setLeft("28.952380952380953em")
+                .setTop("9.142857142857142em")
+                .setWidth("12.876190476190477em")
+                .setCaption("Login")
+                .onClick([
+                    {
+                        "desc" : "Action 1",
+                        "type" : "other",
+                        "target" : "msg",
+                        "args" : [
+                            "Silahkan Login terlebih dahulu",
+                            "Pesan",
+                            200,
+                            5000
+                        ],
+                        "method" : "message",
+                        "event" : 1
+                    }
+                ])
+            );
+            
             return children;
             // ]]Code created by CrossUI RAD Studio
         },
