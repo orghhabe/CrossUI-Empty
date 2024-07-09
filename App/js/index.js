@@ -69,6 +69,135 @@ xui.Class('App', 'xui.Module',{
                 .setTop("22.095238095238095em")
             );
             
+            append(
+                xui.create("xui.UI.TreeGrid")
+                .setHost(host,"xui_ui_treegrid12")
+                .setLeft("0em")
+                .setTop("0em")
+                .setRowNumbered(true)
+                .setHeader([
+                    {
+                        "id" : "col1",
+                        "width" : "8em",
+                        "type" : "input",
+                        "caption" : "col1"
+                    },
+                    {
+                        "id" : "col2",
+                        "width" : "8em",
+                        "type" : "input",
+                        "caption" : "col2"
+                    },
+                    {
+                        "id" : "col3",
+                        "width" : "8em",
+                        "type" : "input",
+                        "caption" : "col3"
+                    },
+                    {
+                        "id" : "col4",
+                        "width" : "8em",
+                        "type" : "input",
+                        "caption" : "col4"
+                    }
+                ])
+                .setRows([
+                    {
+                        "cells" : [
+                            {
+                                "value" : "A1"
+                            },
+                            {
+                                "value" : "B1"
+                            },
+                            {
+                                "value" : "C1"
+                            },
+                            {
+                                "value" : "D1"
+                            }
+                        ]
+                    },
+                    {
+                        "cells" : [
+                            {
+                                "value" : "A2"
+                            },
+                            {
+                                "value" : "B2"
+                            },
+                            {
+                                "value" : "C2"
+                            },
+                            {
+                                "value" : "D2"
+                            }
+                        ]
+                    },
+                    {
+                        "cells" : [
+                            {
+                                "value" : "A3"
+                            },
+                            {
+                                "value" : "B3"
+                            },
+                            {
+                                "value" : "C3"
+                            },
+                            {
+                                "value" : "D3"
+                            }
+                        ],
+                        "sub" : [
+                            {
+                                "cells" : [
+                                    "A4",
+                                    "B4",
+                                    "C4",
+                                    "D4"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "iniFold" : false,
+                        "cells" : [
+                            {
+                                "value" : "A5"
+                            },
+                            {
+                                "value" : "B5"
+                            },
+                            {
+                                "value" : "C5"
+                            },
+                            {
+                                "value" : "D5"
+                            }
+                        ],
+                        "sub" : [
+                            {
+                                "cells" : [
+                                    {
+                                        "value" : "A6"
+                                    },
+                                    {
+                                        "value" : "B6"
+                                    },
+                                    {
+                                        "value" : "C6"
+                                    },
+                                    {
+                                        "value" : "D6"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ])
+            );
+            
             return children;
             // ]]Code created by CrossUI RAD Studio
         },
