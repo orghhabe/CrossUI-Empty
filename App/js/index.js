@@ -21,30 +21,39 @@ xui.Class('App', 'xui.Module',{
             var host=this, children=[], append=function(child){children.push(child.get(0));};
             
             append(
+                xui.create("xui.UI.Div")
+                .setHost(host,"xui_ui_div48")
+                .setLeft("8.380952380952381em")
+                .setTop("2.2857142857142856em")
+                .setWidth("38.17142857142857em")
+                .setHeight("16.076190476190476em")
+            );
+            
+            host.xui_ui_div48.append(
                 xui.create("xui.UI.Input")
-                .setHost(host,"xui_ui_input5")
-                .setLeft("9.904761904761905em")
-                .setTop("4.571428571428571em")
+                .setHost(host,"xui_ui_input31")
+                .setLeft("0.7619047619047619em")
+                .setTop("2.2857142857142856em")
                 .setWidth("32.457142857142856em")
                 .setLabelSize("8em")
                 .setLabelCaption("Username")
             );
             
-            append(
+            host.xui_ui_div48.append(
                 xui.create("xui.UI.Input")
-                .setHost(host,"xui_ui_input6")
-                .setLeft("9.904761904761905em")
-                .setTop("6.857142857142857em")
+                .setHost(host,"xui_ui_input32")
+                .setLeft("0.7619047619047619em")
+                .setTop("4.571428571428571em")
                 .setWidth("32.457142857142856em")
                 .setLabelSize("8em")
                 .setLabelCaption("Password")
             );
             
-            append(
+            host.xui_ui_div48.append(
                 xui.create("xui.UI.Button")
-                .setHost(host,"xui_ui_button6")
-                .setLeft("28.952380952380953em")
-                .setTop("9.142857142857142em")
+                .setHost(host,"xui_ui_button14")
+                .setLeft("19.80952380952381em")
+                .setTop("6.857142857142857em")
                 .setWidth("12.876190476190477em")
                 .setCaption("Login")
                 .onClick([
@@ -62,6 +71,55 @@ xui.Class('App', 'xui.Module',{
                         "event" : 1
                     }
                 ])
+            );
+            
+            append(
+                xui.create("xui.UI.ToolBar")
+                .setHost(host,"xui_ui_toolbar11")
+                .setItems([
+                    {
+                        "id" : "grp1",
+                        "sub" : [
+                            {
+                                "id" : "a1",
+                                "caption" : "button"
+                            },
+                            {
+                                "id" : "a2",
+                                "type" : "split"
+                            },
+                            {
+                                "id" : "a3",
+                                "caption" : "drop button",
+                                "type" : "dropButton"
+                            },
+                            {
+                                "id" : "a4",
+                                "caption" : "status button",
+                                "type" : "statusButton"
+                            }
+                        ],
+                        "caption" : "grp1"
+                    },
+                    {
+                        "id" : "grp2",
+                        "sub" : [
+                            {
+                                "id" : "b1",
+                                "imageClass" : "xui-icon-xui",
+                                "caption" : ""
+                            },
+                            {
+                                "id" : "b2",
+                                "caption" : "image button",
+                                "label" : "label:",
+                                "imageClass" : "xui-icon-xui"
+                            }
+                        ],
+                        "caption" : "grp2"
+                    }
+                ])
+                .setTop("22.095238095238095em")
             );
             
             return children;
